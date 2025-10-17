@@ -1,12 +1,5 @@
-/*
- * Copyright IBM Corp. All Rights Reserved.
- *
- * SPDX-License-Identifier: Apache-2.0
- */
-
+// index.js
 'use strict';
-
-const assetTransfer = require('./lib/assetTransfer');
-
-module.exports.AssetTransfer = assetTransfer;
-module.exports.contracts = [assetTransfer];
+const CdmsContract = require('./lib/cdmsContract');
+module.exports.CdmsContract = CdmsContract;
+module.exports.contracts = [ CdmsContract ];

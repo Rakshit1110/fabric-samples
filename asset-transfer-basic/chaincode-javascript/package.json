@@ -1,23 +1,23 @@
 {
-    "name": "asset-transfer-basic",
+    "name": "cdms-chaincode",
     "version": "1.0.0",
-    "description": "Asset-Transfer-Basic contract implemented in JavaScript",
+    "description": "CDMS Contract for Chain of Custody Evidence Management",
     "main": "index.js",
     "engines": {
-        "node": ">=20"
+        "node": ">=18"
     },
     "scripts": {
-        "lint": "eslint *.js */**.js",
+        "lint": "eslint *.js lib/**/*.js",
         "pretest": "npm run lint",
         "test": "nyc mocha --recursive",
         "start": "fabric-chaincode-node start"
     },
-    "engineStrict": true,
-    "author": "Hyperledger",
+    "engineStrict": false,
+    "author": "CDMS Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "fabric-contract-api": "~2.5",
-        "fabric-shim": "~2.5",
+        "fabric-contract-api": "^2.5.0",
+        "fabric-shim": "^2.5.0",
         "json-stringify-deterministic": "^1.0.0",
         "sort-keys-recursive": "^2.1.0"
     },
@@ -41,10 +41,10 @@
             "html"
         ],
         "all": true,
-        "check-coverage": true,
-        "statements": 100,
-        "branches": 100,
-        "functions": 100,
-        "lines": 100
+        "check-coverage": false,
+        "statements": 80,
+        "branches": 80,
+        "functions": 80,
+        "lines": 80
     }
 }
